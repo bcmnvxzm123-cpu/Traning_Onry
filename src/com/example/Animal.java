@@ -1,13 +1,15 @@
 package com.example;
 
+import java.util.Random;
+
 public class Animal {
     String name;            // 名前
     String proper_noun;     // 固有名詞
     int hp;                 // 耐久力
     int size;               // 大きさ
-    char sex;               // 性別
+    String sex;               // 性別
 
-    public  Animal(String name,String proper_noun,int hp,int size,int price,char sex){
+    public  Animal(String name,String proper_noun,int hp,int size,int price,String sex){
 
         // ローカル変数↓
         this.name = name;
@@ -17,8 +19,13 @@ public class Animal {
         this.sex = sex;
     }
 
-    public static Make() {
-        
+    public void show(Random rnd,Animal ani) {
+        int i = rnd.nextInt();
+
+        System.out.println(hp);
+
+
+
     }
 
 
