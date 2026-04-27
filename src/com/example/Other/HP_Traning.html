@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ログインページ</title>
+</head>
+
+<body style="text-align: center ; margin-top: 100px;">
+
+
+    <h1>ログイン</h1>
+
+    <input type="text" id="user" placeholder="ユーザー名"><br><br>
+    <input type="password" id="pass" placeholder="パスワード"><br><br>
+
+    <button onclick="login()">ログイン</button>
+
+    <p id="result"></p>
+
+    <script>
+        function login(){
+            const user = document.getElementById("user").value;
+            const pass = document.getElementById("pass").value;
+
+            if(user === "admin" && pass === "1234"){
+                document.getElementById("result").textContent = "ログイン成功";
+            } else {
+                document.getElementById("result").textContent = "ログイン失敗";
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
+
+
+

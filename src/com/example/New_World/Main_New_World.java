@@ -1,7 +1,7 @@
-package com.example;
-
 import java.util.Random;
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
 
 public class Main_New_World {
@@ -10,15 +10,32 @@ public class Main_New_World {
         Random rnd = new Random();
         Animal ani = new Animal("猫","不明", 30, 50, 0,"♀");
 
+
+        List<Animal> animal = new ArrayList<>();
+
+        String[] animalName = {"猫","犬","ぶひ","ブタ","ライオン"};
+        String[] animalProper_noun = {"不明","ぽち","ぴぷ","ぶー","がおがお"};
+        int[][] stats = {
+            {30,50,0},
+            {40,60,0},
+            {38,58,0},
+            {30,40,0},
+            {100,200,0}
+            };
+        int i = rnd.nextInt(1);
+        if (i == 0) {
+            
+        }
+
         boolean isHoliday = false;// 休日フラッグ
 
         System.out.println("目が覚めました");
 
         System.out.println("今日は平日ですか？");
         System.out.println("1:YES  2:NO");
-        int i = scn.nextInt();
+        int y = scn.nextInt();
 
-        if (i == 1) {
+        if (y == 1) {
             System.out.println("今日は平日ですので会社に行きましょう");
         }
         else{
@@ -74,8 +91,13 @@ public class Main_New_World {
         }
         else{
             System.out.println("電車で行きましょう");
-            ani.show();
         }
+
+
+        Animal animal1 = new Animal("犬","不明",50,50,"♂");
+
+        
+        System.out.println("家の前に" + ani.name + "がいました");
 
 
 

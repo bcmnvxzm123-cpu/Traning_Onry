@@ -1,5 +1,3 @@
-package com.example;
-
 public class Book {
     String name;// 名前
     String author;// 著者

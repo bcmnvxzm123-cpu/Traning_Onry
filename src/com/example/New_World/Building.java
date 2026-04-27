@@ -1,5 +1,3 @@
-package com.example;
-
 public class Building{
     String name = "";
     int height;

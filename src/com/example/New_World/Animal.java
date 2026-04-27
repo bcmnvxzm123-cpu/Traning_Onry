@@ -1,5 +1,3 @@
-package com.example;
-
 import java.util.Random;
 
 public class Animal {
@@ -22,7 +20,7 @@ public class Animal {
     public void show(Random rnd,Animal ani) {
         int i = rnd.nextInt();
 
-        System.out.println(hp);
+        System.out.println(name);
 
 
 
