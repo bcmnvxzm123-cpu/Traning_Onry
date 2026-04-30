@@ -1,3 +1,4 @@
+package Java_File;
 public class Building{
     String name = "";
     int height;

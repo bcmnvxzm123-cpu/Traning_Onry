@@ -1,31 +1,30 @@
+package com.example.New_World.Java_File;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
 
 
 public class Main_New_World {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         Random rnd = new Random();
-        Animal ani = new Animal("猫","不明", 30, 50, 0,"♀");
 
+        List<Animal> animals = new ArrayList<>();
 
-        List<Animal> animal = new ArrayList<>();
+        animals.add(new Animal("犬","ポチ",50,50,"♂"));
+        animals.add(new Animal("猫","不明",50,50,"♀"));
+        animals.add(new Animal("ブヒ","ぶーちゃん",40,50,"♂"));
+        animals.add(new Animal("ライオン","がおがお",200,200,"♂"));
+        animals.add(new Animal("ブタ","ぶー子",90,100,"♀"));
+        animals.add(new Animal("おばあちゃん","幸子",10,130,"♀"));
 
-        String[] animalName = {"猫","犬","ぶひ","ブタ","ライオン"};
-        String[] animalProper_noun = {"不明","ぽち","ぴぷ","ぶー","がおがお"};
-        int[][] stats = {
-            {30,50,0},
-            {40,60,0},
-            {38,58,0},
-            {30,40,0},
-            {100,200,0}
-            };
-        int i = rnd.nextInt(1);
-        if (i == 0) {
-            
-        }
+        int i = rnd.nextInt(animals.size());
+        
+        System.out.println(animals.get(i).getName());
+        
+
 
         boolean isHoliday = false;// 休日フラッグ
 
@@ -37,6 +36,7 @@ public class Main_New_World {
 
         if (y == 1) {
             System.out.println("今日は平日ですので会社に行きましょう");
+            isHoliday = true;
         }
         else{
             System.out.println("今日は休日です。何をしますか？");
@@ -48,7 +48,7 @@ public class Main_New_World {
         System.out.println("着替えましょう");
 
         boolean ready = false;
-        while(ready){
+        while(!ready){
 
             if (isHoliday) {
                 System.out.println("スーツに着替えましょう");
@@ -94,10 +94,9 @@ public class Main_New_World {
         }
 
 
-        Animal animal1 = new Animal("犬","不明",50,50,"♂");
 
         
-        System.out.println("家の前に" + ani.name + "がいました");
+        // System.out.println("家の前に" + animals(i).getName + "がいました");
 
 
 

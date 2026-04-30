@@ -1,3 +1,4 @@
+package Java_File;
 public class DTO {
     private String name = "";
     private int hp;
